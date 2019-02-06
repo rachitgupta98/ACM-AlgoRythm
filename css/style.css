@@ -137,7 +137,7 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#algologo{
+#algologo {
   width: 90%;
   height: auto;
 }
@@ -472,7 +472,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-
 #intro:before {
   content: "";
   background: rgba(6, 12, 34, 0.8);
@@ -527,7 +526,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(rgb(255, 0, 76) 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(
+    rgb(255, 0, 76) 50%,
+    rgba(101, 111, 150, 0.15) 52%
+  );
   border-radius: 50%;
   display: block;
   position: relative;
@@ -1071,7 +1073,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sponsors {
   padding: 60px 0;
-  
 }
 
 #sponsors .sponsors-wrap {
@@ -1083,19 +1084,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sponsors .sponsor-logo {
   padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   overflow: hidden;
   background: rgb(0, 0, 0);
   height: 200px;
   width: 200px;
+}
+#sponsors .logo-sponsor {
+  margin-bottom: 10px;
 }
 
 #sponsors .sponsor-logo:hover img {
@@ -1105,187 +1108,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #sponsors img {
   transition: all 0.4s ease-in-out;
-}
-
-/*--------------------------------------------------------------
-# F.A.Q Section
---------------------------------------------------------------*/
-
-#faq {
-  padding: 60px 0;
-}
-
-#faq #faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-#faq #faq-list li {
-  border-bottom: 1px solid #ddd;
-}
-
-#faq #faq-list a {
-  padding: 18px 0;
-  display: block;
-  position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  padding-right: 20px;
-}
-
-#faq #faq-list i {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 16px;
-}
-
-#faq #faq-list p {
-  margin-bottom: 20px;
-}
-
-#faq #faq-list a.collapse {
-  color: rgb(255, 0, 76);
-}
-
-#faq #faq-list a.collapsed {
-  color: #000;
-}
-
-#faq #faq-list a.collapsed i::before {
-  content: "\f055" !important;
-}
-
-/*--------------------------------------------------------------
-# Subscribe Section
---------------------------------------------------------------*/
-
-#subscribe {
-  padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
-#subscribe:before {
-  content: "";
-  background: rgba(6, 12, 34, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#subscribe .section-header h2,
-#subscribe p {
-  color: #fff;
-}
-
-#subscribe input {
-  background: #fff;
-  color: #060c22;
-  border: 0;
-  outline: none;
-  margin: 0;
-  padding: 9px 20px;
-  border-radius: 50px;
-  font-size: 14px;
-}
-
-#subscribe button {
-  border: 0;
-  padding: 9px 25px;
-  cursor: pointer;
-  background: rgb(255, 0, 76);
-  color: #fff;
-  transition: all 0.3s ease;
-  outline: none;
-  font-size: 14px;
-  border-radius: 50px;
-}
-
-#subscribe button:hover {
-  background: #e0072f;
-}
-
-/*--------------------------------------------------------------
-# Buy Tickets Section
---------------------------------------------------------------*/
-
-#buy-tickets {
-  padding: 60px 0;
-}
-
-#buy-tickets .card {
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
-}
-
-#buy-tickets .card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
-}
-
-#buy-tickets .card hr {
-  margin: 25px 0;
-}
-
-#buy-tickets .card .card-title {
-  margin: 10px 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-#buy-tickets .card .card-price {
-  font-size: 48px;
-  margin: 0;
-}
-
-#buy-tickets .card ul li {
-  margin-bottom: 20px;
-}
-
-#buy-tickets .card .text-muted {
-  opacity: 0.7;
-}
-
-#buy-tickets .card .btn {
-  font-size: 15px;
-  border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: rgb(255, 0, 76);
-  border: 0;
-  color: #fff;
-}
-
-#buy-tickets .card .btn:hover {
-  background-color: #e0072f;
-}
-
-#buy-tickets #buy-ticket-modal input,
-#buy-tickets #buy-ticket-modal select {
-  border-radius: 0;
-}
-
-#buy-tickets #buy-ticket-modal .btn {
-  font-size: 15px;
-  border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: rgb(255, 0, 76);
-  border: 0;
-  color: #fff;
-}
-
-#buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;
 }
 
 /*--------------------------------------------------------------
@@ -1644,13 +1466,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 13px;
   }
 
-  #intro{
+  #intro {
     background: url(/img/mobile.JPG) no-repeat;
     width: 100%;
     height: 100vh;
   }
 
-  #about{
+  #about {
     background: url(/img/mobile2.JPG) no-repeat;
   }
 }
@@ -1679,38 +1501,64 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-#sublogo1{
-  animation:blinkingText1 1s infinite;
+#sublogo1 {
+  animation: blinkingText1 1s infinite;
   animation-delay: 5s;
 }
 
-#sublogo2{
-  animation:blinkingText2 1s infinite;
+#sublogo2 {
+  animation: blinkingText2 1s infinite;
   animation-delay: 5s;
 }
 
-@keyframes blinkingText1{
-  0%{     opacity: 0;}
-  30%{    opacity: 0.1;}
-  49%{    color: rgb(161, 161, 161); }
-  50%{    opacity: 0;}
-  60%{    color: rgb(0, 0, 0); opacity: 0.8;}
-  100%{   color: #00ffbf}
+@keyframes blinkingText1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  49% {
+    color: rgb(161, 161, 161);
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+  100% {
+    color: #00ffbf;
+  }
 }
 
-@keyframes blinkingText2{
-  0%{     opacity: 0;}
-  30%{    opacity: 0.1;}
-  49%{    color: rgb(161, 161, 161); }
-  50%{    opacity: 0;}
-  60%{    color: rgb(0, 0, 0); opacity: 0.8;}
-  100%{   color: rgb(255, 0, 76)}
+@keyframes blinkingText2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  49% {
+    color: rgb(161, 161, 161);
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+  100% {
+    color: rgb(255, 0, 76);
+  }
 }
 
-#dev{
+#dev {
   color: #00ffbf;
 }
 
-.ask{
+.ask {
   text-align: center;
 }
