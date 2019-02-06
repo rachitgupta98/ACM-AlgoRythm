@@ -1474,6 +1474,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   #about {
     background: url(/img/mobile2.JPG) no-repeat;
   }
+
+  #punchline{
+    font-size: 15px;
+    margin-bottom: -50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1560,4 +1565,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .ask {
   text-align: center;
+}
+
+#punchline{
+  font-size: 30px;
+  font-weight: 10;
 }
